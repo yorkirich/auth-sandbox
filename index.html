@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="A modern authentication sandbox application with Firebase integration">
+    <title>Auth Sandbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./images/icon-192.png">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Login Panel -->
+        <section class="auth-panel">
+            <h2>Authentication</h2>
+
+            <div class="auth-status">
+                <span id="statusIndicator" class="status-dot status-logged-out"></span>
+                <span id="statusText">Logged Out</span>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password"
+                        autocomplete="current-password" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="loginBtn" class="btn btn-primary">Login</button>
+                    <button type="button" id="registerBtn" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+
+            <button type="button" id="logoutBtn" class="btn btn-secondary" disabled
+                style="display: none; width: 100%;">Logout</button>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="content-panel">
+            <h1 id="mainHeading">Hello World</h1>
+
+            <div class="content-controls">
+                <div class="form-group">
+                    <label for="headingInput">Change Heading</label>
+                    <input type="text" id="headingInput" placeholder="Enter new heading text" value="Hello World">
+                </div>
+
+                <button id="saveBtn" class="btn btn-primary">Save Settings</button>
+            </div>
+
+            <!-- Premium Features Section -->
+            <div id="premium-features" class="premium-container" style="display: none;">
+                <h3>🚀 Premium XC Planning Tools</h3>
+                <p id="premiumStatus" class="premium-message"></p>
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

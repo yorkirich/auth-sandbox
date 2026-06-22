@@ -1,0 +1,54 @@
+{
+    "name": "Auth Sandbox",
+    "short_name": "Auth Sandbox",
+    "description": "A modern authentication sandbox application with Firebase integration",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#667eea",
+    "background_color": "#ffffff",
+    "categories": [
+        "productivity"
+    ],
+    "screenshots": [
+        {
+            "src": "./images/screenshot-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "./images/screenshot-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ],
+    "icons": [
+        {
+            "src": "./images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./images/icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./images/icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
